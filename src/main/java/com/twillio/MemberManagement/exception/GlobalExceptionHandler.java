@@ -10,7 +10,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(MemberException.class)
     ResponseEntity<Object> errorInCrudOperation(MemberException memberException) {
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(memberException.getMessage());
+        return ResponseEntity.status(memberException.STATUS).body(memberException.getMessage());
     }
 
     @ExceptionHandler(Exception.class)
