@@ -1,13 +1,13 @@
-package com.twillio.MemberManagement;
+package com.storefront;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MemberManagementApplication {
+public class StoreFrontApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MemberManagementApplication.class, args);
+		SpringApplication.run(StoreFrontApplication.class, args);
 	}
 
 }
